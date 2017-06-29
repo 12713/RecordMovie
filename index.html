@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <!-- <base href="http://demos.telerik.com/kendo-ui/window/index"> -->
+    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
+		.k-button:hover {
+		    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		
+		    .example {
+		        min-height:500px;
+		    }   
+		    .armchair {
+		    	float: left;
+		    	margin: 30px 30px 120px 30px;
+		    	text-align: center;
+		    }
+		    .armchair img {
+		        display: block;
+		        margin-bottom: 10px;
+		    }
+		    .k-window-content a {
+		        color: #BBB;
+		    }
+		    .k-window-content p {
+		        margin-bottom: 1em;
+		    }
+		    
+		    @media screen and (max-width: 1023px) {
+		        div.k-window {
+		            display: none !important;
+		        }
+		    }
+    </style>
+    <title>电影与剧的记录</title>
+   <link rel="stylesheet" href="kendo.common-material.min.css" />
+   <link rel="stylesheet" href="kendo.material.min.css" />
+   <link rel="stylesheet" href="bootstrap.min.css" />
+   <script src="jquery.min.js"></script>
+  <script src="kendo.all.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default" style="width: 702px;text-align:center;margin: 0 auto;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" 
+					   href="#collapseOne">
+						<strong>烧脑悬疑系列</strong>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse ">
+				<div class="panel-body">
+					<div class="example" >
+	<!--...................................................................................................................  -->
+					<div id="window1-1" style="display:none" >
+				        <div class="armchair"><img src="image/彗星来的那一夜.jpg" width="230x" height="300px" /></div>
+				        <p class="k-window-content">Alvar Aalto is one of the greatest names in modern architecture and design. Glassblowers at the iittala factory still meticulously handcraft the legendary vases that are variations on one theme, fluid organic shapes that let the end user decide the use. Interpretations of the shape in new colors and materials add to the growing Alvar Aalto Collection that remains true to his original design.</p>
+					    </div>
+					    <span id="night" onclick="night()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+					    <strong>彗星来的那一夜</strong><sub><电影></sub></span>&nbsp;
+	<!--...................................................................................................................  -->				<div id="window1-2" style="display:none" >
+					        <div class="armchair"><img src="image/迷失.jpg" width="230x" height="300px" /></div>
+					        <p class="k-window-content">Alvar Aalto is one of the greatest names in modern architecture and design. Glassblowers at the iittala factory still meticulously handcraft the legendary vases that are variations on one theme, fluid organic shapes that let the end user decide the use. Interpretations of the shape in new colors and materials add to the growing Alvar Aalto Collection that remains true to his original design.</p>
+						    </div>					     
+						    <span id="lost" onclick="lost()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+						    <strong>迷失</strong><sub><剧></sub></span>
+	<!--...................................................................................................................  -->				<div id="window1-3" style="display:none" >
+					        <div class="armchair"><img src="image/盗梦空间.jpg" width="230x" height="300px" /></div>
+					        <p class="k-window-content">Alvar Aalto is one of the greatest names in modern architecture and design. Glassblowers at the iittala factory still meticulously handcraft the legendary vases that are variations on one theme, fluid organic shapes that let the end user decide the use. Interpretations of the shape in new colors and materials add to the growing Alvar Aalto Collection that remains true to his original design.</p>
+						    </div>					     
+						    <span id="Inception" onclick="Inception()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+						    <strong>盗梦空间</strong><sub><电影></sub></span>
+	<!--...................................................................................................................  -->
+				    <div id="window1-4" style="display:none" >
+				        <div class="armchair"><img src="image/禁闭岛.jpg" width="230x" height="300px" /></div>
+				        <p class="k-window-content">Alvar Aalto is one of the greatest names in modern architecture and design. Glassblowers at the iittala factory still meticulously handcraft the legendary vases that are variations on one theme, fluid organic shapes that let the end user decide the use. Interpretations of the shape in new colors and materials add to the growing Alvar Aalto Collection that remains true to his original design.</p>
+				    	</div>					     
+					    <span id="shutterIsland" onclick="shutterIsland()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+					    <strong>禁闭岛</strong><sub><电影></sub></span>
+	<!--...................................................................................................................  -->
+					<div id="window1-5" style="display:none" >
+					        <div class="armchair"><img src="image/穆赫兰道.jpg" width="230x" height="300px" /></div>
+					        <p class="k-window-content">Alvar Aalto is one of the greatest names in modern architecture and design. Glassblowers at the iittala factory still meticulously handcraft the legendary vases that are variations on one theme, fluid organic shapes that let the end user decide the use. Interpretations of the shape in new colors and materials add to the growing Alvar Aalto Collection that remains true to his original design.</p>
+						    </div>					     
+						    <span id="drive" onclick="drive()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+						    <strong>穆赫兰道</strong><sub><电影></sub></span>
+	<!--...................................................................................................................  -->
+					<div id="window1-6" style="display:none" >
+					        <div class="armchair"><img src="image/龙纹身的女孩.jpg" width="230x" height="300px" /></div>
+					        <p class="k-window-content">Alvar Aalto is one of the greatest names in modern architecture and design. Glassblowers at the iittala factory still meticulously handcraft the legendary vases that are variations on one theme, fluid organic shapes that let the end user decide the use. Interpretations of the shape in new colors and materials add to the growing Alvar Aalto Collection that remains true to his original design.</p>
+						    </div>					     
+						    <span id="GirlDragonTatioo" onclick="GirlDragonTatioo()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+						    <strong>龙纹身的女孩</strong><sub><电影></sub></span>
+	<!--...................................................................................................................  -->
+						<script>
+										function GirlDragonTatioo(){
+											var myWindow = $("#window1-6"),
+											    night = $("#GirlDragonTatioo");
+											    function onClose() {
+											    night.fadeIn();
+											}; 					    					
+											    myWindow.kendoWindow({
+											    width: "600px",
+											    height:"500px",
+											    title: "龙纹身的女孩",
+											    visible: false,
+											    actions: [
+											        "Pin",
+											       "Minimize",
+											       "Maximize",
+											       "Close"
+											    ],
+											    close: onClose
+											}).data("kendoWindow").center().open();
+											    night.fadeOut();
+										};
+										function drive(){
+											var myWindow = $("#window1-5"),
+											    night = $("#drive");
+											    function onClose() {
+											    night.fadeIn();
+											}; 					    					
+											    myWindow.kendoWindow({
+											    width: "600px",
+											    height:"500px",
+											    title: "穆赫兰道",
+											    visible: false,
+											    actions: [
+											        "Pin",
+											       "Minimize",
+											       "Maximize",
+											       "Close"
+											    ],
+											    close: onClose
+											}).data("kendoWindow").center().open();
+											    night.fadeOut();
+										};
+										function shutterIsland(){
+											var myWindow = $("#window1-4"),
+											    night = $("#shutterIsland");
+											    function onClose() {
+											    night.fadeIn();
+											}; 					    					
+											    myWindow.kendoWindow({
+											    width: "600px",
+											    height:"500px",
+											    title: "禁闭岛",
+											    visible: false,
+											    actions: [
+											        "Pin",
+											       "Minimize",
+											       "Maximize",
+											       "Close"
+											    ],
+											    close: onClose
+											}).data("kendoWindow").center().open();
+											    night.fadeOut();
+										};
+										function Inception(){
+											var myWindow = $("#window1-3"),
+											    night = $("#Inception");
+											    function onClose() {
+											    night.fadeIn();
+											}; 					    					
+											    myWindow.kendoWindow({
+											    width: "600px",
+											    height:"500px",
+											    title: "盗梦空间",
+											    visible: false,
+											    actions: [
+											        "Pin",
+											       "Minimize",
+											       "Maximize",
+											       "Close"
+											    ],
+											    close: onClose
+											}).data("kendoWindow").center().open();
+											    night.fadeOut();
+										};
+					    				function night(){
+					    					var myWindow = $("#window1-1"),
+					    					    night = $("#night");
+					    					    function onClose() {
+					    					    night.fadeIn();
+					    					}; 					    					
+					    					    myWindow.kendoWindow({
+					    					    width: "600px",
+					    					    height:"500px",
+					    					    title: "彗星来的那一夜",
+					    					    visible: false,
+					    					    actions: [
+					    					        "Pin",
+					    					       "Minimize",
+					    					       "Maximize",
+					    					       "Close"
+					    					    ],
+					    					    close: onClose
+					    					}).data("kendoWindow").center().open();
+					    					    night.fadeOut();
+					    				};
+					                   function lost(){
+					                   		var myWindow = $("#window1-2"),
+					                   		    lost = $("#lost");
+					                   		    function onClose() {
+					                   		    lost.fadeIn();
+					                   		};
+					                   		    myWindow.kendoWindow({
+					                   		    width: "600px",
+					                   		    height:"500px",
+					                   		    title: "迷失",
+					                   		    visible: false,
+					                   		    actions: [
+					                   		        "Pin",
+					                   		       "Minimize",
+					                   		       "Maximize",
+					                   		       "Close"
+					                   		    ],
+					                   		    close: onClose
+					                   		}).data("kendoWindow").center().open();
+					                   		    lost.fadeOut();
+					                   };                    
+				        </script>
+					    <style>
+					        #night,#lost,#Inception,#shutterIsland {
+					        	background-color: #F5F5F5; 
+					        } 
+					    </style>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-success" style="width: 702px;text-align:center;margin: 0 auto;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" 
+					   href="#collapseTwo">
+						<strong>幽默风趣系列</strong>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="example" >
+					    <div id="window2" style="display:none" >
+					        <div class="armchair"><img src="image/瑞克.jpg" width="230x" height="300px" /></div>
+					        <p class="k-window-content">wwwwwwwwwwwwwwww</p>
+					    </div>
+					    <span id="undo2" onclick="move2()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">瑞克</span>
+					    <script>			                        
+					                    function move2() {
+					                     	var myWindow = $("#window2"),
+					                     	    undo = $("#undo2");
+					                     	    function onClose() {
+					                     	    undo.fadeIn();
+					                     	};
+					                            myWindow.kendoWindow({
+					                            width: "600px",
+					                            height:"500px",
+					                            title: "瑞克",
+					                            visible: false,
+					                            actions: [
+					                                "Pin",
+					                               "Minimize",
+					                               "Maximize",
+					                               "Close"
+					                            ],
+					                            close: onClose
+					                        }).data("kendoWindow").center().open();
+					                            undo.fadeOut();
+					                    	};                                                
+					    </script>
+					    <style>
+					        #undo2 {
+					        	background-color:#B4EEB4;	          
+					        }				       
+					    </style>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-info" style="width: 702px;text-align:center;margin: 0 auto;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" 
+					   href="#collapseThree">
+						<strong>动作战争奇幻系列</strong>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="example" >
+	<!--...................................................................................................................  -->
+					    <div id="window3-1" style="display:none" >
+					        <div class="armchair"><img src="image/杰西卡琼斯.jpg" width="230x" height="300px" /></div>
+					        <p class="k-window-content">qqqqqqqqqqqqqqq</p>
+					    </div>
+					    <span id="jessica" onclick="jessica()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+					    <strong>杰西卡琼斯</strong><sub><剧></sub></span>
+	<!--...................................................................................................................  -->
+					    <div id="window3-2" style="display:none" >
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/行尸走肉.jpg" width="230x" height="300px" /></div>
+							<div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/瑞克.jpg" width="230x" height="300px" /></div>
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/格伦.jpg" width="230x" height="300px" /></div>
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/弩哥.jpg" width="230x" height="300px" /></div>
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/卡罗尔.jpg" width="230x" height="300px" /></div>
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/罗西塔.jpg" width="480px" height="400px" /></div>
+					        <p class="k-window-content">qqqqqqqqqqqqqqq</p>
+					    </div>
+					    <span id="theWaklingDead" onclick="theWaklingDead()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+					    <strong>行尸走肉</strong><sub><剧></sub></span>   
+	<!--...................................................................................................................  -->
+						<div id="window3-3" style="display:none" >
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/雪诺.jpg" width="230x" height="300px" /></div>
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/罗珀.jpg" width="480x" height="400px" /></div>
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/大熊.jpg" width="480x" height="400px" /></div>
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="video/大熊.gif" width="480x" height="400px" /></div>
+					        <p class="k-window-content">qqqqqqqqqqqqqqq</p>
+					    </div>
+					    <span id="gameOfThrones" onclick="gameOfThrones()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+					    <strong>权力的游戏</strong><sub><剧></sub></span>   
+	<!--...................................................................................................................  -->
+						<div id="window3-4" style="display:none" >
+					        <div class="armchair" style="margin-bottom: 20px;">
+					        <img src="image/教父.jpg" width="230x" height="300px" /></div>
+					        <div class="armchair"><img src="image/教父与三儿子.jpg" width="350x" height="300px" /></div>
+					        <p class="k-window-content">qqqqqqqqqqqqqqq</p>
+					    </div>
+					    <span id="father" onclick="father()" class="k-button hide-on-narrow" style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;">
+					    <strong>教父</strong><sub><剧></sub></span>   
+	<!--...................................................................................................................  -->
+					    <script>        
+					    				function father() {
+					                     	var myWindow = $("#window3-4"),
+					                     	    undo = $("#father");
+					                     	    function onClose() {
+					                     	    undo.fadeIn();
+					                     	} ;
+					                            myWindow.kendoWindow({
+					                            width: "600px",
+					                            height:"500px",
+					                            title: "教父",
+					                            visible: false,
+					                            actions: [
+					                                "Pin",
+					                               "Minimize",
+					                               "Maximize",
+					                               "Close"
+					                            ],
+					                            close: onClose
+					                        }).data("kendoWindow").center().open();
+					                            undo.fadeOut();
+					                        };
+										function gameOfThrones() {
+					                     	var myWindow = $("#window3-3"),
+					                     	    undo = $("#gameOfThrones");
+					                     	    function onClose() {
+					                     	    undo.fadeIn();
+					                     	} ;
+					                            myWindow.kendoWindow({
+					                            width: "600px",
+					                            height:"500px",
+					                            title: "权力的游戏",
+					                            visible: false,
+					                            actions: [
+					                                "Pin",
+					                               "Minimize",
+					                               "Maximize",
+					                               "Close"
+					                            ],
+					                            close: onClose
+					                        }).data("kendoWindow").center().open();
+					                            undo.fadeOut();
+					                        };
+					                    function jessica() {
+					                     	var myWindow = $("#window3-1"),
+					                     	    undo = $("#jessica");
+					                     	    function onClose() {
+					                     	    undo.fadeIn();
+					                     	} ;
+					                            myWindow.kendoWindow({
+					                            width: "600px",
+					                            height:"500px",
+					                            title: "杰西卡琼斯",
+					                            visible: false,
+					                            actions: [
+					                                "Pin",
+					                               "Minimize",
+					                               "Maximize",
+					                               "Close"
+					                            ],
+					                            close: onClose
+					                        }).data("kendoWindow").center().open();
+					                            undo.fadeOut();
+					                        };
+					                    function theWaklingDead() {
+					                        	var myWindow = $("#window3-2"),
+					                        	    undo = $("#theWaklingDead");
+					                        	    function onClose() {
+					                        	    undo.fadeIn();
+					                        	} ;
+					                               myWindow.kendoWindow({
+					                               width: "600px",
+					                               height:"500px",
+					                               title: "行尸走肉",
+					                               visible: false,
+					                               actions: [
+					                                   "Pin",
+					                                  "Minimize",
+					                                  "Maximize",
+					                                  "Close"
+					                               ],
+					                               close: onClose
+					                           }).data("kendoWindow").center().open();
+					                               undo.fadeOut();
+					                           };                                                  
+					    </script>
+					    <style>
+					        #jessica,#theWaklingDead,#gameOfThrones,#father {
+					        	background-color:#D1EEEE;  
+					        }					       
+					    </style>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-warning" style="width: 702px;text-align:center;margin: 0 auto;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" 
+					   href="#collapseFour">
+						<strong>文艺系列</strong>
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFour" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="example" >
+	<!--...................................................................................................................  -->
+					    <div id="window4-1" style="display:none" >
+					        <div class="armchair"><img src="image/初吻.jpg" width="300x" height="300px" />
+							<audio controls="controls">
+								<source src="music/reality.wav" type="audio/wav">换个浏览器就可以听了！
+							</audio>
+							</div>	
+					        <p class="k-window-content">Alvar Aalto is one of the gr</p>			
+					    </div>
+					    <span id="reality" onclick="reality()" class="k-button hide-on-narrow" 
+						style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;"><strong>初吻</strong><sub><电影></sub> </span> 
+	<!--...................................................................................................................  -->
+						    <div id="window4-2" style="display:none" >
+						        <div class="armchair"><img src="image/假如爱有天意.jpg" width="230x" height="300px" />
+								<audio controls="controls">
+									<source src="music/假如爱有天意.wav" type="audio/wav">换个浏览器就可以听了！
+								</audio>
+								</div>	
+						        <p class="k-window-content">Alvar Aalto is one of the gr</p>			
+						    </div>
+						        <span id="ifLoveGod" onclick="ifLoveGod()" class="k-button hide-on-narrow" 
+						    	style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;"><strong>假如爱有天意</strong><sub><电影></sub> </span> 
+	<!--...................................................................................................................  -->
+					    <div id="window4-3" style="display:none" >
+					        <div class="armchair"><img src="image/永不瞑目.jpg" width="230x" height="300px" />
+							
+							</div>	
+					        <p class="k-window-content">Alvar Aalto is one of the gr</p>			
+					    </div>
+					    <span id="eyesAlwaysOpen" onclick="eyesAlwaysOpen()" class="k-button hide-on-narrow" 
+						style="display: inline-block;border-left-width: 0px;border-right-width: 0px;border-top-width: 0px;border-bottom-width: 0px;margin-bottom: 5px;"><strong>永不瞑目</strong><sub><剧></sub> </span> 
+	<!--...................................................................................................................  -->						    			
+									<script>
+										function eyesAlwaysOpen() {
+											var myWindow = $("#window4-3"),
+											    undo = $("#eyesAlwaysOpen");
+											    function onClose() {
+											    undo.fadeIn();
+											};
+										       myWindow.kendoWindow({
+										       width: "600px",
+										       height:"500px",
+										       title: "永不瞑目",
+										       visible: false,
+										       actions: [
+										           "Pin",
+										          "Minimize",
+										          "Maximize",
+										          "Close"
+										       ],
+										       close: onClose
+										   }).data("kendoWindow").center().open();
+										       undo.fadeOut();
+										   };
+										function ifLoveGod() {
+											var myWindow = $("#window4-2"),
+											    undo = $("#ifLoveGod");
+											    function onClose() {
+											    undo.fadeIn();
+											};
+										       myWindow.kendoWindow({
+										       width: "600px",
+										       height:"500px",
+										       title: "假如爱有天意",
+										       visible: false,
+										       actions: [
+										           "Pin",
+										          "Minimize",
+										          "Maximize",
+										          "Close"
+										       ],
+										       close: onClose
+										   }).data("kendoWindow").center().open();
+										       undo.fadeOut();
+										   };
+					                     function reality() {
+					                     	var myWindow = $("#window4-1"),
+					                     	    undo = $("#reality");
+					                     	    function onClose() {
+					                     	    undo.fadeIn();
+					                     	};
+					                            myWindow.kendoWindow({
+					                            width: "700px",
+					                            height:"500px",
+					                            title: "初吻",
+					                            visible: false,
+					                            actions: [
+					                                "Pin",
+					                               "Minimize",
+					                               "Maximize",
+					                               "Close"
+					                            ],
+					                            close: onClose
+					                        }).data("kendoWindow").center().open();
+					                            undo.fadeOut();
+					                        };                                                
+					                </script>
+					    <style>
+					        #reality,#ifLoveGod,#eyesAlwaysOpen {
+					        	background-color:	#FFF8DC;
+					        }					        
+					    </style>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function () { $('#collapseFour').collapse('hide')});
+		$(function () { $('#collapseTwo').collapse('hide')});
+		$(function () { $('#collapseThree').collapse('hide')});
+		$(function () { $('#collapseOne').collapse('hide')});
+	</script>  
+        
+</body>
+</html>
